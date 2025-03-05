@@ -8,7 +8,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --background: linear-gradient(135deg, #0e2a47, #2c3e50); /* Gradiente escuro em tons de azul */
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -18,18 +18,18 @@
 }
 
 .light {
-  --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
-  --stroke-color: rgba(0, 0, 0, 1);
-  --surface-color: rgba(0, 0, 0, 0.05);
+  --text-color: rgb(255, 255, 255);
+  --background: linear-gradient(135deg, #a0c4ff, #3b8d99); /* Gradiente claro com mais tons de azul */
+  --stroke-color: rgb(255, 255, 255);
+  --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, 0.1);
-  --bg-img: rgba(0, 0, 0, 0.5);
+  --highlight-color: rgba(255, 255, 255, 0.1);
+  --bg-img: rgb(255, 255, 255);
   --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
+  background: var(--background) no-repeat top center/cover;
   height: 100vh;
   font-family: "Inter", sans-serif;
   color: var(--text-color);
@@ -158,12 +158,13 @@ footer {
 }
 
 /* Media Queries */
-@media (min-width: 700px) {
+@media (min-width: 10000px) {
   .dark {
-    --bg-url: url(./assets/bg-desktop.jpg);
+    background: linear-gradient(135deg, #0e2a47, #2c3e50); /* Gradiente escuro em tons de azul */
+
   }
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
+    background: linear-gradient(135deg, #a0c4ff, #3b8d99); /* Gradiente claro com mais tons de azul */
   }
 }
 
