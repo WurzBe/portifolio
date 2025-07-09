@@ -20,7 +20,6 @@
 .light {
   --text-color: rgb(255, 255, 255);
   --background: linear-gradient(135deg, #a0c4ff, #3b8d99); /* Gradiente claro com mais tons de azul */
-  fill: var(--background);
   --stroke-color: rgb(255, 255, 255);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -32,11 +31,11 @@
 /* ADICIONADO: evita "barra azul" no topo */
 html {
   background: var(--background);
-  height: 120%;
+  height: 100%;
 }
 
 body {
-  background: var(--background) no-repeat center center fixed;
+  background: var(--background) no-repeat center/cover;
   background-attachment: fixed;
   overflow-x: hidden;
   height: 100vh;
@@ -167,7 +166,7 @@ footer {
 }
 
 /* Media Queries */
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
   .dark {
     background: linear-gradient(135deg, #0e2a47, #2c3e50);
   }
