@@ -31,11 +31,11 @@
 /* ADICIONADO: evita "barra azul" no topo */
 html {
   background: var(--background);
-  height: 100%;
+  height: 120%;
 }
 
 body {
-  background: var(--background) no-repeat center/cover;
+  background: var(--background) no-repeat center center fixed;
   background-attachment: fixed;
   overflow-x: hidden;
   height: 100vh;
