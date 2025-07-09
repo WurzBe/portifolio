@@ -36,6 +36,10 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 }
+html {
+  background: var(--background);
+  height: 100%;
+}
 
 #container {
   width: 100%;
