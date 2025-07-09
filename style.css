@@ -166,7 +166,7 @@ footer {
 }
 
 /* Media Queries */
-@media (min-width: 10000px) {
+@media (min-width: 100%) {
   .dark {
     background: linear-gradient(135deg, #0e2a47, #2c3e50);
   }
