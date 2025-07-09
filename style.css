@@ -20,6 +20,7 @@
 .light {
   --text-color: rgb(255, 255, 255);
   --background: linear-gradient(135deg, #a0c4ff, #3b8d99); /* Gradiente claro com mais tons de azul */
+  fill: var(--background);
   --stroke-color: rgb(255, 255, 255);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
