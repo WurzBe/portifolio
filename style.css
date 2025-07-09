@@ -29,7 +29,7 @@
 }
 
 body {
-  background: var(--background) no-repeat top center/cover;
+  background: var(--background) no-repeat center/cover;
   height: 100vh;
   font-family: "Inter", sans-serif;
   color: var(--text-color);
