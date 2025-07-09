@@ -165,8 +165,8 @@ footer {
   font-size: 14px;
 }
 
-/* Media Queries */
-@media (min-width: 1px) {
+/* Media Queries 
+{
   .dark {
     background: linear-gradient(135deg, #0e2a47, #2c3e50);
   }
