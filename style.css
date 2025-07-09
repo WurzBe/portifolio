@@ -166,14 +166,14 @@ footer {
 }
 
 /* Media Queries */
-
+@media (min-width: 1920px) {
   .dark {
     background: linear-gradient(135deg, #0e2a47, #2c3e50);
   }
   .light {
     background: linear-gradient(135deg, #a0c4ff, #3b8d99);
   }
-
+}
 
 /* Animations */
 @keyframes slide-mode-buttom-in {
