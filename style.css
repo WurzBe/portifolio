@@ -28,17 +28,19 @@
   --switch-bg-url: url(./assets/sun.svg);
 }
 
-body {
-  background: var(--background) no-repeat center/cover;
-  height: 100vh;
-  font-family: "Inter", sans-serif;
-  color: var(--text-color);
-  background-attachment: fixed;
-  overflow-x: hidden;
-}
+/* ADICIONADO: evita "barra azul" no topo */
 html {
   background: var(--background);
   height: 100%;
+}
+
+body {
+  background: var(--background) no-repeat center/cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
 }
 
 #container {
@@ -127,7 +129,7 @@ ul li a {
   -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
   font-weight: 500;
-  color: var(--text-color); /* Cor da fonte como estava antes */
+  color: var(--text-color);
   transition: background 0.2s, border 0.2s;
 }
 
@@ -166,11 +168,10 @@ footer {
 /* Media Queries */
 @media (min-width: 1000px) {
   .dark {
-    background: linear-gradient(135deg, #0e2a47, #2c3e50); /* Gradiente escuro em tons de azul */
-
+    background: linear-gradient(135deg, #0e2a47, #2c3e50);
   }
   .light {
-    background: linear-gradient(135deg, #a0c4ff, #3b8d99); /* Gradiente claro com mais tons de azul */
+    background: linear-gradient(135deg, #a0c4ff, #3b8d99);
   }
 }
 
